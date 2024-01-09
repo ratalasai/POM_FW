@@ -9,7 +9,7 @@ import com.base.TestBase;
 
 public class EQuarz_Login extends TestBase {
 
-	//Webelements address and initiate this by using pagefactory class 
+	//WebElements address and initiate this by using pageFactory class 
 	
 		@FindBy (id="si-email")
 		WebElement username;
@@ -20,6 +20,9 @@ public class EQuarz_Login extends TestBase {
 		@FindBy (xpath="//button[text()='Sign in']")
 		WebElement signin;
 
+		public EQuarz_Login(WebDriver driver) {
+			// TODO Auto-generated constructor stub
+		}
 		public void LoginFunctionality(WebDriver driver) {
 			PageFactory.initElements(driver, this);
 		}

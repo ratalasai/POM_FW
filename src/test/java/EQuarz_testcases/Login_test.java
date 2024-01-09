@@ -18,7 +18,7 @@ public class Login_test extends TestBase {
 	public void setup() {
 		
 		Intialization();
-		login= new EQuarz_Login();
+		EQuarz_Login login = new EQuarz_Login(driver);
 		
 	}
 	
